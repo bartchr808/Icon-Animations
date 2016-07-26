@@ -1,0 +1,109 @@
+#bigCloud,
+#smallCloud {
+    background-color: #dbf2fe;
+    background: linear-gradient(#f2f9fe 45%, #a5defb 100%);
+    background: -webkit-linear-gradient(top, #f2f9fe 45%, #a5defb 100%);
+    background: -moz-linear-gradient(top, #f2f9fe 45%, #a5defb 100%);
+    background: -ms-linear-gradient(top, #f2f9fe 45%, #a5defb 100%);
+    background: -o-linear-gradient(top, #f2f9fe 45%, #a5defb 100%);
+    /* why need to add this to make smaller clouds move relative to it???*/
+    position: relative;
+}
+
+#bigCloud {
+    margin: -4% auto;
+    width: 15%;
+    height: 10%;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+
+#bigCloud::before,
+#bigCloud::after {
+    /*why need to add content and position???*/
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+#bigCloud::before {
+    background: #f2f9fe;
+    width: 55%;
+    height: 165%;
+    bottom: 15%;
+    right: 15%;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+}
+
+#bigCloud::after {
+    background: #f2f9fe;
+    width: 25%;
+    height: 77%;
+    bottom: 65%;
+    left: 15%;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+}
+
+#smallCloud {
+    margin: 10% auto 2%;
+    left: 10%;
+    width: 9%;
+    height: 6%;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+
+#smallCloud::before,
+#smallCloud::after {
+    /*why need to add content and position???*/
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+#smallCloud::before {
+    height: 85%;
+    width: 50%;
+    background: #f2f9fe;
+    bottom: 95%;
+    right: 15%;
+    border-radius: 90px 90px 0 0;
+    -webkit-border-radius: 90px 90px 0 0;
+    -moz-border-radius: 90px 90px 0 0;
+}
+
+#smallCloud::after {
+    background: #f2f9fe;
+    width: 25%;
+    height: 77%;
+    bottom: 65%;
+    left: 15%;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+}
+
+#sun {
+    background-color: #ffff76;
+    background: linear-gradient(#ffff76 25%, #c4c400 100%);
+    background: -webkit-linear-gradient(top, #ffff76 25%, #c4c400 100%);
+    background: -moz-linear-gradient(top, #ffff76 25%, #c4c400 100%);
+    background: -ms-linear-gradient(top, #ffff76 25%, #c4c400 100%);
+    background: -o-linear-gradient(top, #ffff76 25%, #c4c400 100%);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    /* why need to add this to make smaller clouds move relative to it???*/
+    position: relative;
+    margin: 10% auto 2%;
+    z-index: -2;
+    height: 11.6%;
+    width: 6.5%;
+    right: 4%;
+}
